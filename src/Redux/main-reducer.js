@@ -2,7 +2,7 @@
 import data from "../123.json"
 
 let initialState = {
-    data:data
+    
 }
 
 export const MainReducer = (state=initialState, action) => {
