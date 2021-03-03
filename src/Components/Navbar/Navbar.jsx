@@ -8,7 +8,7 @@ export const Navbar = () => {
                 <a href="/">
                     <Svg i={4}/>
                 </a>
-                <a href="/">
+                <a href="/" className={styles.activeLink}>
                     <Svg i={5}/>
                 </a>
                 <a href="/">

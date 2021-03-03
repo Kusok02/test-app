@@ -12,3 +12,17 @@
     align-items: center;
     flex-direction: column;
 }
+
+.nav a {
+    width: 32px;
+    height: 32px;
+}
+
+.activeLink {
+    background: rgba(255, 122, 79, 0.2);
+    border-radius: 8px;
+}
+
+Svg {
+    margin: 4px;
+}

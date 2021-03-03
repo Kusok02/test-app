@@ -1,8 +1,8 @@
 //import axios from 'axios'
-import data from "../123.json"
+//import data from "../123.json"
 
 let initialState = {
-    
+
 }
 
 export const MainReducer = (state=initialState, action) => {
