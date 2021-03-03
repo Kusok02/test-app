@@ -1,6 +1,46 @@
 .header_wrapper {
-    background-color: red;
     height: 64px;
-    width: 1920px;
-    
+    width: 100%;
+    grid-area: header;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 65px;
+    height: 29px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #364E65;
+
+    margin: 18px 66px;
+}
+
+.users_info {
+    display: flex;
+    float: right;
+    width: 250px;
+    height: 24px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.users_info img {
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.users_info a {
+    font-family: 'Roboto', sans-serif;
+    line-height: 19px;
+    text-decoration: none;
+    color: #364E65;
 }

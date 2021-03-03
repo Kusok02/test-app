@@ -1,6 +1,5 @@
 import './App.css'
-import {Route} from "react-router-dom";
-import {MainPage} from "./Components/MainPage";
+// import {Route} from "react-router-dom";
 import {Header} from "./Components/Header/Header";
 import {Navbar} from "./Components/Navbar/Navbar";
 import {Content} from "./Components/Content/Content";
