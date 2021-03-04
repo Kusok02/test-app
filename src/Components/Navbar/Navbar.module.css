@@ -6,8 +6,8 @@
 }
 
 .nav {
-    width: 60px;
-    height: 200px;
+    width: 64px;
+    height: 300px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -15,20 +15,21 @@
 }
 
 .nav a:not(.activeLink){
+    background: #F5F5F5;
+}
+
+.nav a {
+    margin: 0 auto 24px auto;
     width: 32px;
     height: 32px;
-    background: #F5F5F5;
     border-radius: 8px;
-    margin: 0 auto;
+    /*cursor: default;*/
+    /*pointer-events: none;*/
 }
 
 .activeLink {
     background: rgba(255, 122, 79, 0.2);
-    border-radius: 8px;
-    width: 32px;
-    height: 32px;
 }
-
-.nav a img {
-    margin: 4px;
+.nav img {
+    padding: 4px;
 }
