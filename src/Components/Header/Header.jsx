@@ -1,5 +1,8 @@
 import styles from "./Header.module.css"
-import {Svg} from "../images/SvgIcons"
+import userIcon from "../images/User.svg"
+import infoIcon from "../images/info.svg"
+import arrowIcon from "../images/arrow-bottom.svg"
+import bellIcon from "../images/Bell.svg"
 
 export const Header = (props) => {
     return (
@@ -10,17 +13,17 @@ export const Header = (props) => {
 
             <div className={styles.users_info}>
                 <a href="/">
-                    <Svg i={0}/>
+                    <img src={infoIcon} alt="infoIcon"/>
                 </a>
                 <a href="/">
-                    <Svg i={1}/>
+                    <img src={bellIcon} alt="bellIcon"/>
                 </a>
                 <a href="/">
-                    <Svg i={2}/>
+                    <img src={userIcon} alt="userIcon"/>
                 </a>
                 <a href="/">Фамилия Имя</a>
-                <a href="/">
-                    <Svg i={3}/>
+                <a href="/" className={styles.arrowIcon}>
+                    <img src={arrowIcon} alt="arrowIcon" className={styles.arrowIcon}/>
                 </a>
 
             </div>

@@ -3,3 +3,47 @@
     height: 100%;
     grid-area: content;
 }
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #364E65;
+
+    margin: 24px 0 20px 32px;
+}
+
+.breadcrumbs_wrapper {
+    margin: 0 32px;
+}
+
+.breadcrumbs_wrapper > a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.content {
+
+
+    margin: 0 24px 0 32px;
+    display: flex;
+}
+
+.contentItem {
+    max-height: 780px;
+    max-width: 584px;
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+.page_name {
+
+    height: 112px;
+
+    margin: 0 0 0 8px;
+}

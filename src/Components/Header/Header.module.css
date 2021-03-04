@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
+    background: #FFFFFF;
 }
 
 .logo {
@@ -29,17 +30,28 @@
     display: flex;
     justify-content: space-evenly;
     margin: 20px;
+    align-items: center;
 }
 
-.users_info>a img {
+.users_info>a img:not(.arrowIcon) {
     width: 24px;
-    height: 24px;
+    height: 18px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.users_info a {
+.users_info a:not(.arrowIcon) {
     font-family: 'Roboto', sans-serif;
-    line-height: 19px;
     text-decoration: none;
     color: #364E65;
+    height: 18px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.arrowIcon {
+    width: 6px;
+    height: 3px;
+    text-align: center;
+    display: block;
 }

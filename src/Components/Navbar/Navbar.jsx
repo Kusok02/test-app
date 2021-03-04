@@ -1,24 +1,28 @@
 import styles from "./Navbar.module.css"
-import {Svg} from "../images/SvgIcons"
+import starIcon from "../images/Star.svg"
+import chartBarIcon from "../images/ChartBar.svg"
+import clockCounterIcon from "../images/ClockCounterClockwise.svg"
+import databaseIcon from "../images/Database.svg"
+import monitorIcon from "../images/Monitor.svg"
 
 export const Navbar = () => {
     return (
         <div className={styles.navbar_wrapper}>
             <div className={styles.nav}>
                 <a href="/">
-                    <Svg i={4}/>
+                    <img src={starIcon} alt="starIcon"/>
                 </a>
                 <a href="/" className={styles.activeLink}>
-                    <Svg i={5}/>
+                    <img src={monitorIcon} alt="monitorIcon"/>
                 </a>
                 <a href="/">
-                    <Svg i={6}/>
+                    <img src={databaseIcon} alt="databaseIcon"/>
                 </a>
                 <a href="/">
-                    <Svg i={7}/>
+                    <img src={chartBarIcon} alt="chartBarIcon"/>
                 </a>
                 <a href="/">
-                    <Svg i={8}/>
+                    <img src={clockCounterIcon} alt="clockCounterIcon"/>
                 </a>
             </div>
         </div>

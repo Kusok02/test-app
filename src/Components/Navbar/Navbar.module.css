@@ -2,6 +2,7 @@
     height: 100%;
     width: 64px;
     grid-area: navbar;
+    background: #FFFFFF;
 }
 
 .nav {
@@ -13,16 +14,21 @@
     flex-direction: column;
 }
 
-.nav a {
+.nav a:not(.activeLink){
     width: 32px;
     height: 32px;
+    background: #F5F5F5;
+    border-radius: 8px;
+    margin: 0 auto;
 }
 
 .activeLink {
     background: rgba(255, 122, 79, 0.2);
     border-radius: 8px;
+    width: 32px;
+    height: 32px;
 }
 
-Svg {
+.nav a img {
     margin: 4px;
 }
