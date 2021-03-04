@@ -1,3 +1,5 @@
+/*@import url('../Content/Content.module.css');*/
+
 .header_wrapper {
     height: 64px;
     width: 100%;
@@ -54,3 +56,115 @@
     text-align: center;
     display: block;
 }
+
+/*--------------------------------------------------*/
+/*BURGER*/
+
+.burger_menu {
+    width: 24px;
+    height: 24px;
+    margin: 10px 0 20px 16px ;
+    position: absolute;
+}
+
+.menu_btn {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 12px;
+    height: 44px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+}
+.menu_btn_checkbox {
+    opacity: 0;
+}
+.menu_btn_burger {
+    width: 14px;
+    height: 2px;
+    background-color: #BEC7D0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+    margin: 0 auto;
+}
+
+.menu_btn_burger::before, .menu_btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background: #BEC7D0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+    transition: all .5s ease-in-out;
+}
+.menu_btn_burger::before {
+    transform: translateY(-5px);
+}
+.menu_btn_burger::after {
+    transform: translateY(5px);
+}
+.menu_btn_checkbox:checked + .menu_btn_burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu_btn_checkbox:checked + .menu_btn_burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+.menu_btn_checkbox:checked + .menu_btn_burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.text {
+    position:fixed;
+    top:50px;
+    left:-1000%;
+    background: #FFFFFF;
+    width: 200px;
+    height: 300px;
+}
+
+.text>ul li {
+    list-style-type: none;
+    margin: 0 0 0 16px;
+    position: relative;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #364E65;
+    font-weight: 400;
+    height: 48px;
+    padding-top: 10px;
+}
+
+.text>ul {
+    padding: 0;
+}
+
+.text>ul img {
+    position: absolute;
+    right: 18px;
+    top: 16px;
+}
+
+.menu_btn_checkbox:checked~.text {
+    left: 64px;
+}
+
+.menu_btn_checkbox:checked~.contentItem {
+    max-width: 520px;
+    margin-left: 200px;
+}
+
+.activeLink {
+    background: #FFE4DC;
+    position: relative;
+    height: 32px !important;
+    margin-bottom: 17px !important;
+}
+

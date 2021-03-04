@@ -3,6 +3,6 @@ import {MainReducer} from "./main-reducer";
 
 let MainPage = MainReducer
 
-let store = createStore(MainPage);
+let state = createStore(MainPage);
 
-export default store;
+export default state;
