@@ -5,6 +5,4 @@ let MainPage = MainReducer
 
 let store = createStore(MainPage);
 
-//window.store = store
-
 export default store;
