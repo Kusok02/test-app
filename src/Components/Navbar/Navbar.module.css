@@ -1,7 +1,7 @@
 .navbar_wrapper {
     height: 100%;
     width: 64px;
-    grid-area: navbar;
+    grid-area: nav;
     background: #FFFFFF;
 }
 

@@ -1,16 +1,19 @@
+@import url("./Components/Header/Header.module.css");
+@import url("./Components/Content/Content.module.css");
+
 .app_wrapper {
     width:  100%;
     height: 913px;
 
     margin: 0 auto;
-    display: grid;
-
-    grid-template-areas:
-    "header header"
-    "navbar content";
-    grid-template-columns: 64px 1fr;
-    grid-template-rows: 64px 1fr;
+    display: flex;
+    flex-flow: column;
 
     background: #E5E5E5;
 
+}
+
+.menu_btn_checkbox:checked~.contentItem {
+    width: 200px;
+    margin-left: 200px;
 }

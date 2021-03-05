@@ -1,7 +1,7 @@
 import styles from "./Header.module.css"
 import userIcon from "../images/User.svg"
 import infoIcon from "../images/info.svg"
-import arrowDownIcon from "../images/arrow-bottom.svg"
+import arrowDownIcon from "../images/arrow-down.svg"
 import arrowRightIcon from "../images/arrow-right.svg"
 import bellIcon from "../images/Bell.svg"
 
@@ -19,7 +19,8 @@ export const Header = (props) => {
                     <div className={styles.text}>
                         <ul>
                             <li>Избранное <img src={arrowRightIcon} alt="infoIcon"/></li>
-                            <li className={styles.activeLink}>Тестовое задание <img src={arrowRightIcon} alt="infoIcon"/></li>
+                            <li className={styles.activeLink}>Тестовое задание <img src={arrowRightIcon}
+                                                                                    alt="infoIcon"/></li>
                             <li>Пункт 3 <img src={arrowRightIcon} alt="infoIcon"/></li>
                             <li>Пункт 4 <img src={arrowRightIcon} alt="infoIcon"/></li>
                             <li>Пункт 5 <img src={arrowRightIcon} alt="infoIcon"/></li>

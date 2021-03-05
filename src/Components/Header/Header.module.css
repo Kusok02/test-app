@@ -51,8 +51,8 @@
 }
 
 .arrowIcon {
-    height: 12px;
-    width: 6px;
+    height: 6px;
+    width: 12px;
     text-align: center;
     display: block;
 }
@@ -80,6 +80,7 @@
 .menu_btn_checkbox {
     opacity: 0;
 }
+
 .menu_btn_burger {
     width: 14px;
     height: 2px;
@@ -121,7 +122,7 @@
 .text {
     position:fixed;
     top:50px;
-    left:-1000%;
+    left:-300%;
     background: #FFFFFF;
     width: 200px;
     height: 300px;
@@ -154,10 +155,11 @@
 
 .menu_btn_checkbox:checked~.text {
     left: 64px;
+    transition: 0.5s;
 }
 
 .menu_btn_checkbox:checked~.contentItem {
-    max-width: 520px;
+    width: 200px;
     margin-left: 200px;
 }
 
@@ -167,4 +169,3 @@
     height: 32px !important;
     margin-bottom: 17px !important;
 }
-
