@@ -13,13 +13,11 @@
 .logo {
     width: 65px;
     height: 29px;
-
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 24px;
     line-height: 29px;
     color: #364E65;
-
     margin: 18px 66px;
 }
 
@@ -28,7 +26,6 @@
     float: right;
     width: 250px;
     height: 24px;
-    display: flex;
     justify-content: space-evenly;
     margin: 20px;
     align-items: center;
@@ -61,7 +58,7 @@
 /*BURGER*/
 
 .burger_menu {
-    width: 24px;
+    width: 32px;
     height: 24px;
     margin: 10px 0 20px 16px ;
     position: absolute;

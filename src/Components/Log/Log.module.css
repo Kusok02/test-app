@@ -72,10 +72,6 @@
     margin: 31px 12px 0 0;
 }
 
-.added {
-
-}
-
 .added>ul>p {
     padding-left: 8px;
     border-left: 2px solid #364E65;
@@ -137,4 +133,22 @@
     line-height: 140%;
     color: #364E65;
     align-items: center;
+}
+
+.log_wrapper {
+    width: 100%;
+}
+
+@media (min-width:1440px) {
+    .contentItem {
+        max-width: 33%;
+    }
+}
+
+@media (max-width: 425px) {
+    .content {
+        flex-direction: column;
+        overflow: auto;
+        margin-top: 20px;
+    }
 }

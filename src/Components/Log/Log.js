@@ -3,7 +3,7 @@ import styles from "./Log.module.css"
 
 export const Log = (props) => {
     return (
-            <div >
+            <div className={styles.log_wrapper}>
                 <div className={styles.page_name}>
                     <div className={styles.header}>Тестовое задание ФИО</div>
 

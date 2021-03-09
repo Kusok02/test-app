@@ -33,3 +33,9 @@
 .nav img {
     padding: 4px;
 }
+
+@media (min-width: 1440px) {
+    .nav {
+        height: 500px;
+    }
+}

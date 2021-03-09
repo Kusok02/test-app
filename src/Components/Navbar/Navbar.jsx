@@ -8,7 +8,7 @@ import monitorIcon from "../images/Monitor.svg"
 export const Navbar = () => {
     return (
         <div className={styles.navbar_wrapper}>
-            <div className={styles.nav}>
+            <nav className={styles.nav}>
                 <a href="/">
                     <img src={starIcon} alt="starIcon"/>
                 </a>
@@ -24,7 +24,7 @@ export const Navbar = () => {
                 <a href="/">
                     <img src={clockCounterIcon} alt="clockCounterIcon"/>
                 </a>
-            </div>
+            </nav>
         </div>
     )
 }
